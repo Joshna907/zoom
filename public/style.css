@@ -1,0 +1,103 @@
+.main {
+    height: 100vh;  /* Set the height of the main container */
+    display: flex;  /* Use flexbox for layout */
+}
+
+.main__left {
+    flex: 0.8;  /* Take up 80% of the available space */
+    display: flex;  /* Use flexbox for layout within the left section */
+    flex-direction: column;  /* Arrange children in a column */
+}
+
+.main__right {
+    flex: 0.2;  /* Take up 20% of the available space */
+}
+
+.main__videos {
+    flex-grow: 1;  /* Allow the videos section to grow to fill the remaining space */
+    background-color: black;  /* Set background color to black */
+    display: flex;  /* Use flexbox for layout within the videos section */
+    justify-content: center;  /* Center content horizontally */
+    align-items: center;  /* Center content vertically */
+    padding: 40px;  /* Add padding */
+}
+
+.main__controls {
+    background-color: #1C1E20;  /* Set background color for controls */
+}
+
+.main__right {
+    background-color: #242324;  /* Set background color for the right section */
+    border-left: 1px solid #3D3D42;  /* Add a left border to separate from the left section */
+}
+
+.main__controls {
+    color: #D2D2D2;  /* Set text color for controls */
+    display: flex;  /* Use flexbox for layout within controls */
+    justify-content: space-between;  /* Space items evenly */
+    padding: 5px;  /* Add padding */
+}
+
+.main__controls__block {
+    display: flex;  /* Use flexbox for layout within control blocks */
+}
+
+.main__controls__button {
+    display: flex;  /* Use flexbox for layout within buttons */
+    flex-direction: column;  /* Arrange children in a column */
+    justify-content: center;  /* Center content vertically */
+    align-items: center;  /* Center content horizontally */
+    padding: 8px 10px;  /* Add padding */
+    min-width: 80px;  /* Set minimum width */
+    cursor: pointer;  /* Set cursor to pointer */
+}
+
+.main__controls__button:hover {
+    background-color: #343434;  /* Set background color on hover */
+    border-radius: 5px;  /* Add border-radius on hover */
+}
+
+.main__controls__button i {
+    font-size: 24px;  /* Set font size for icons */
+}
+
+.main__right {
+    display: flex;  /* Use flexbox for layout within the right section */
+    flex-direction: column;  /* Arrange children in a column */
+}
+
+.main__header {
+    padding-top: 5px;  /* Add padding to the top of the header */
+    color: #F5F5F5;  /* Set text color for the header */
+    text-align: center;  /* Center text */
+}
+
+.main__chat_window {
+    flex-grow: 1;  /* Allow the chat window to grow to fill the remaining space */
+    overflow-y: auto;  /* Add vertical scrollbar when content exceeds container height */
+}
+
+.messages {
+    color: white;  /* Set text color for messages */
+    list-style: none;  /* Remove list styling */
+}
+
+.main__message_container {
+    padding: 22px 12px;  /* Add padding to the message container */
+    display: flex;  /* Use flexbox for layout within the message container */
+}
+
+.main__message_container input {
+    flex-grow: 1;  /* Allow the input to grow to fill the remaining space */
+    background-color: transparent;  /* Set background color to transparent */
+    border: none;  /* Remove border */
+    color: #F5F5F5;  /* Set text color for the input */
+}
+
+.leave_meeting {
+    color: #EB534B;  /* Set text color for leave meeting */
+}
+
+.unmute, .stop {
+    color: #CC3B33;  /* Set text color for unmute and stop buttons */
+}
